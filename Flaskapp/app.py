@@ -36,7 +36,7 @@ def map_func():
 			geores1.pop()
 		geores1.reverse()
 		api = tweepy.API(auth, wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
-		results = api.search(q="Global Warming",geocode="40.7128,-74.0060,1000km",count=90)#distance taken is 1000km
+		results = api.search(q="great",geocode="40.7128,-74.0060,1000km",count=90)#distance taken is 1000km
 		data2 = [s._json for s in results]
 		for d in data2:
 			if "place" in d.keys(): 
